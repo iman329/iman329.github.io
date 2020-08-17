@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <title>
+         - 桃李华林 | 王寒的私语
+      </title>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    
+    <meta name="theme-color" content="#000000" />
+    
+    <meta http-equiv="window-target" content="_top" />
+    
+    
+    <meta name="description" content="使⽤Hugo&#43;Gitbook&#43;Nginx 构建静态博客⽹站 前⾔：之前我⼀直使⽤的是wordpress搭建的博客，由于是在某云搞活动时买的最低配" />
+    <meta name="generator" content="Hugo 0.74.3 with theme pure" />
+    <title> - 桃李华林 | 王寒的私语</title>
+    
+    
+    <link rel="stylesheet" href="https://iman.github.io/css/style.min.7dc20efbc53647d41aa9ddea0c48e59300223d084e66ea0cbe7c30bd88903acc.css">
+    
+    <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+    <meta property="og:title" content="" />
+<meta property="og:description" content="使⽤Hugo&#43;Gitbook&#43;Nginx 构建静态博客⽹站 前⾔：之前我⼀直使⽤的是wordpress搭建的博客，由于是在某云搞活动时买的最低配" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://iman.github.io/post/hero/" />
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="使⽤Hugo&#43;Gitbook&#43;Nginx 构建静态博客⽹站 前⾔：之前我⼀直使⽤的是wordpress搭建的博客，由于是在某云搞活动时买的最低配">
+
+<meta itemprop="wordCount" content="2277">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="使⽤Hugo&#43;Gitbook&#43;Nginx 构建静态博客⽹站 前⾔：之前我⼀直使⽤的是wordpress搭建的博客，由于是在某云搞活动时买的最低配"/>
+
+    <!--[if lte IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+      <![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+      <![endif]-->
+  </head>
+
+  
+  
+
+  <body class="main-center theme-white" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/xiaoheiAh" target="_blank">
+            <img class="img-circle img-rotate" src="https://iman.github.io/avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">少年王寒</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">学生</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>中国, 北京</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="想要查找什么..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">滕龙渡</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/posts/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">逐日岛</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">破云舟</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">翠微楼</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">关于剑主</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>非专业分享~</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> 分类</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://iman.github.io/categories/test/" class="category-list-link">test</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://iman.github.io/categories/%E6%8A%80%E6%9C%AF/" class="category-list-link">技术</a><span class="category-list-count">1</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> 标签</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="https://iman.github.io/tags/%E7%BB%83%E4%B9%A0/" class="tag-list-link">练习</a><span
+                    class="tag-list-count">3</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">文章目录</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/post/hero/"
+    ></a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/post/hero/#comments"
+            class="article-comment-link">评论</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 2277字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 5分 </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <h1 id="使hugogitbooknginx-构建静态博客站">使⽤Hugo+Gitbook+Nginx 构建静态博客⽹站</h1>
+<blockquote>
+<p>前⾔：之前我⼀直使⽤的是wordpress搭建的博客，由于是在某云搞活动时买的最低配置服务器，⽽wordpress⼜需要安 装很多组件，⽹站变得越来越慢。最近发现了Hugo 是 Go 编写的静态⽹站⽣成器，速度很快，依赖于 Markdown ⽂ 件，⾮常适合博客。</p>
+</blockquote>
+<h3 id="部署hugo">⼀、部署hugo</h3>
+<p>在Github上下载Hugo的Release包上传到Linux服务器</p>
+<pre><code>$ yum -y install git golang 
+$ mkdir -p /app/hugo_0.74.3 
+$ tar xf hugo_0.74.3_Linux-64bit.tar.gz -C /app/hugo_0.74.3 
+$ cp /app/hugo_0.74.3/hugo /usr/local/bin/ 
+$ hugo version 
+	Hugo Static Site Generator v0.74.3-DA0437B4 linux/amd64 BuildDate: 2020-07-23T16:22:34Z
+</code></pre>
+<h5 id="创建站">创建⽹站</h5>
+<pre><code>$ hugo new site zhanminblog[名称⾃定义] 
+$ ls 
+archetypes config.toml  content  data  layouts  static  themes
+</code></pre>
+<p>选择主题</p>
+<p>在这⾥hugo themes选择你喜欢的主题并根据主题的REAMDE进⾏相应操作，⽐如我选择的是Pure主题</p>
+<p>因为每个主题的样式和功能不同，所以要根据主题的README介绍进⾏调试，将主题的配置和⽂章⽬录复制到⽹站根⽬录下</p>
+<pre><code>$ rm -f /app/zhanminlog/config.toml 
+$ cp -r themes/pure/exampleSite/* /app/zhanminblog/
+</code></pre>
+<p>根据⾃⼰的想法修改模板的配置⽂件进⾏调试，可参考主题的README⽂件，我的部分定义如下：</p>
+<pre><code>$ cat config.
+baseURL: http://www.unmin.club 
+theme: pure 
+title: 前⾏ 
+defaultContentLanguage: zh # en/zh/... 
+footnoteReturnLinkContents: ↩ 
+hasCJKLanguage: true 
+paginate: 7 
+enableEmoji: true 
+PygmentsCodeFences: false 
+googleAnalytics: &quot;&quot; # UA-XXXXXXXX-X 
+permalinks:
+	posts: /:year/:month/:filename/ 
+taxonomies:
+------------------------
+</code></pre>
+<p>创建第⼀篇⽂章</p>
+<p>根据主题的定义，⽂章需要放在posts⽬录下，由于上⾯我们已经copy了主题模板的⽂件。所以我们可以直接新建⽂ 章，⽆需使⽤ <code>hugo new posts/xxx.md</code> 指令。</p>
+<pre><code>$ cd /app/zhanminblog/content/posts 
+$ touch heelo.md 
+$ cat hello.md 
++++ #为⽂章的定义，如标题，作者，⽬录等。
+author = &quot;前⾏&quot;
+title = &quot;第⼀篇⽂章&quot;
+date = &quot;2020-07-29&quot;
+description = &quot;这是我使⽤hugo创建的第⼀篇⽂章&quot;
+tags = [ 
+	&quot;hugo&quot;,
+] 
+categories = [ 
+	&quot;hugoblog&quot;,
+]
+#series = [&quot;系列&quot;]
+#aliases = [&quot;别名&quot;]
++++
+
+# ⼀、Hugo介绍 Hugo是轻量级的静态资源服务
+​```shell $ hello hugo 
+--------
+</code></pre>
+<p>启动服务预览</p>
+<p>由于我使⽤的是Linux公有云服务器，需要开启外机访问，如果是windows本机调试，则直接使⽤ 访问4000端⼝即可</p>
+<pre><code>$ hugo server --bind=&quot;0.0.0.0&quot; -v -w -b http://www.unmin.club
+</code></pre>
+<p>当然这种启动⽅式也可直接使⽤到线上，直接修改或者创建md⽂件即可，⽆需使⽤build指令转化为html⽂件。</p>
+<p>如果你是本地调试则可以使⽤ hugo 放到Github或者Nginx上即可访问。</p>
+<p>命令将⽂件转化为html格式，会⽣成名为“public”的⽬录，然后将这个⽬录的内容</p>
+<p>由于我还需要使⽤Gitbook来写⽂章，⽽且打算将这两个集成到⼀块，所以我选择的⽅式是直接在Linux上修改⽂章，通 过启动其他端⼝号来预览⽂章，然后在通过 hugo 转换为html，复制到Nginx的html⽬录下发布，最后通过nginx的80 端⼝访问。</p>
+<p>指定端⼝号来预览⽂章</p>
+<pre><code>$ hugo server --bind=&quot;0.0.0.0&quot; -v -w -p 8080 -b http://www.unmin.club
+</code></pre>
+<p>发布⽂章 预览没有问题则构建为html⽂件，⽣成public⽬录，注意使⽤</p>
+<p>hugo</p>
+<p>指令需要在⽹站的根⽬录。</p>
+<pre><code>$ hugo 
+$ ls public/ 2020 about 404.html about-hugo about-us avatar.png categories contact css donate elk-book favicon.ico fonts index.html index.xml js
+</code></pre>
+<h3 id="部署nginx作为前端代理">⼆、部署Nginx作为前端代理</h3>
+<p>使⽤nginx作为前端，代理后⾯的hugo与gitbook服务</p>
+<pre><code>$ yum -y install
+
+nginx
+</code></pre>
+<p>复制刚才转换⽣成的html⽂件到Nginx下，更新⽂章时可以写⼀个update.sh 脚本</p>
+<pre><code>$ rm -rf $ cp -r
+
+/usr/share/nginx/html/* /app/zhanminblog/public/* /usr/share/nginx/html
+</code></pre>
+<p>启动nginx</p>
+<pre><code>$ systemctl start nginx
+</code></pre>
+<p>访问⽹站</p>
+<h3 id="三部署gitbook">三、部署gitbook</h3>
+<p>Hugo现在已经可以使⽤了，我们开始部署gitbook</p>
+<p>部署node.js</p>
+<pre><code>$ wget https://nodejs.org/dist/v12.18.1/node-v12.18.1-linux-x64.tar.xz 
+$ tar xf node-v12.18.1-linux-x64.tar.xz 
+$ vim /etc/profil 
+$ export PATH=$PATH:/app/node-v12.18.1-linux-x64/bin 
+$ source /etc/profile 
+$ node -v 
+v12.18.1
+</code></pre>
+<p>安装gitbook</p>
+<pre><code>$ npm install gitbook-cli -g 
+$ gitbook -V CLI 
+version: 2.3.2 
+GitBook version: 3.2.3
+</code></pre>
+<p>创建书籍</p>
+<pre><code>$ mkdir /app/k8s-book 
+$ gitbook init 
+$ ls /app/k8s-book 
+	README.md SUMMARY.md
+</code></pre>
+<p>创建书籍⽬录</p>
+<pre><code>$ cat SUMMARY.md 
+# Summary
+
+* [前⾔](README.md) 
+* [Kubernetes基础](Chapter1/README.md) 
+	* [基本概念与组件原理](Chapter1/jieshao.md) 
+	* [使⽤Kubeadm部署集群](Chapter1/kubeadm.md) 
+	* [YAML⽂件语法](Chapter1/YAML.md) 
+	* [深⼊理解Pod](Chapter1/Pod.md) 
+* [Kubernetesb编排控制器](Chapter2/README.md) 
+	* [Deployment](Chapter2/deployment.md) 
+	* [StatefulSet](Chapter2/StatefulSet.md) 
+	* [DaemonSet](Chapter2/DaemonSet.md) 
+* [Kubernets配置管理](Chapter3/README.md) 
+	* [ConfigMap](Chapter3/ConfigMap.md) 
+	* [Secret](Chapter3/Secret.md) 
+	* [ServiceAccount](Chapter3/ServiceAccount.md) 
+	* [RBAC](Chapter3/RBAC.md) 
+* [Kubernetes持久化存储](Chapter4/README.md) 
+	* [PV](Chapter4/Pv.md) * [PVC](Chapter4/PVC.md) 
+	* [StorageClass](Chapter4/StorageClass.md) 
+	* [本地持久化存储](Chapter4/LocalPv.md) 
+	* [⽹络分布式存储](Chapter3/Ceph.md)
+</code></pre>
+<p>安装功能插件</p>
+<pre><code>$ vim book.json posts prometheus-book update.sh searchindex.json series
+{
+			&quot;title&quot;: &quot;前⾏&quot;, 
+			&quot;author&quot;: &quot;前⾏&quot;, 
+			&quot;description&quot;: &quot;kubernetes&quot;, 
+			&quot;language&quot;: &quot;zh-hans&quot;, 
+			&quot;gitbook&quot;: &quot;3.2.3&quot;, 
+			&quot;styles&quot;: { &quot;website&quot;: &quot;./style/website.css&quot; 
+			}, 
+			&quot;structure&quot;: { &quot;readme&quot;: &quot;README.md&quot; 
+			}, 
+			&quot;links&quot;: { 
+					&quot;sidebar&quot;: { 
+							&quot;回到博客&quot;: &quot;http://www.unmin.club&quot; 
+					} 
+			}, 
+			&quot;plugins&quot;: [ 
+					&quot;anchors&quot;, 
+					&quot;auto-scroll-table&quot;, 
+			&quot;chapter-fold&quot;, 
+			&quot;expandable-chapters-small&quot;, 
+			&quot;toggle-chapters&quot;, 
+					&quot;advanced-emoji&quot;, 
+					&quot;code&quot;, 
+					&quot;favicon&quot;, 
+					&quot;fontsettings&quot;, 
+					&quot;klipse&quot;, 
+					&quot;-livereload&quot;, 
+					&quot;-lunr&quot;, 
+					&quot;pageview-count&quot;, 
+					&quot;page-toc-button&quot;, 
+					&quot;popup&quot;, 
+					&quot;sharing-plus&quot;, 
+					&quot;-sharing&quot;, 
+					&quot;splitter&quot;, 
+					&quot;-search&quot;, 
+					&quot;search-pro&quot;, 
+					&quot;tbfed-pagefooter&quot;, 
+					&quot;todo&quot;, 
+					&quot;hide-element&quot;
+				], 
+				&quot;pluginsConfig&quot;: {
+						&quot;hide-element&quot;: { 
+							&quot;elements&quot;: [&quot;.gitbook-link&quot;] 
+						}, 
+						&quot;theme-default&quot;: { 
+								&quot;showLevel&quot;: true 
+						}, 
+						&quot;code&quot;: { &quot;copyButtons&quot;: true 
+						}, 
+						&quot;tbfed-pagefooter&quot;: { 
+							&quot;copyright&quot;: &quot;Copyright © zhanmin 2020&quot;, 
+							&quot;modify_label&quot;: &quot;本书发布时间：&quot;, 
+							&quot;modify_format&quot;: &quot;YYYY-MM-DD HH:mm:ss&quot; 
+						}, 
+						&quot;page-toc-button&quot;: { 
+								&quot;maxTocDepth&quot;: 2, 
+								&quot;minTocSize&quot;: 2 
+						}, 
+						&quot;sharing&quot;: { 
+							&quot;douban&quot;: false, 
+							&quot;facebook&quot;: false, 
+							&quot;google&quot;: false, 
+							&quot;hatenaBookmark&quot;: false, 
+							&quot;instapaper&quot;: false, 
+							&quot;line&quot;: false, 
+							&quot;linkedin&quot;: false, 
+							&quot;messenger&quot;: false, 
+							&quot;pocket&quot;: false, 
+							&quot;qq&quot;: true, 
+							&quot;qzone&quot;: true, 
+							&quot;stumbleupon&quot;: false, 
+							&quot;twitter&quot;: false, 
+							&quot;viber&quot;: false, 
+							&quot;vk&quot;: false, 
+							&quot;weibo&quot;: true, 
+							&quot;whatsapp&quot;: false, 
+							&quot;all&quot;: [ 
+								&quot;weibo&quot;,&quot;qq&quot;, &quot;qzone&quot;, &quot;douban&quot;, &quot;facebook&quot;,&quot;google&quot;,
+								&quot;linkedin&quot;,&quot;twitter&quot;,&quot;whatsapp&quot; 
+							]
+						}, 
+						&quot;anchor-navigation-ex&quot;: {
+								&quot;showLevel&quot;: true 
+						}, 
+						&quot;favicon&quot;:{
+								&quot;shortcut&quot;: &quot;&quot;,
+								&quot;bookmark&quot;: &quot;&quot; 
+						}
+				}
+}
+</code></pre>
+<h5 id="安装件中的插件">安装⽂件中的插件</h5>
+<pre><code>$ gitbook install
+</code></pre>
+<h5 id="创建章">创建⽂章</h5>
+<pre><code>$ mkdir /app/k8s-book/Chapter1 
+$ vim /app/k8s-book/Chapter1/README.md 
+hello gitbook
+</code></pre>
+<p>gitbook也是⽀持本地预览的，使⽤<code>gitbook serve</code>指令即可</p>
+<pre><code>$ gitbook serve
+</code></pre>
+<p>没问题我们就和hugo⼀样转换为html⽂件，会⽣成_book⽬录，使⽤<code>gitbook build</code>指令即可更新⽂章。</p>
+<pre><code>$ gitbook build 
+$ ls /app/k8s-book 
+_book Chapter1 Chapter2 Chapter3 Chapter4 Chapter5 Chapter6 Chapter7 README.md
+SU
+</code></pre>
+<h5 id="配置nginx">配置Nginx</h5>
+<p>ok，现在我们修改Nginx的配置⽂件，添加gitbook的⽬录地址</p>
+<pre><code>$ vim /etc/nginx/nginx.conf 
+--------------------
+		server { 
+				listen 80 default_server; 
+				listen [::]:80 default_server; 
+				server_name _; 
+				root /usr/share/nginx/html;
+				# Load configuration files for the default server block. 
+				include /etc/nginx/default.d/*.conf;
+
+			location / { 
+			}
+
+				error_page 404 /404.html; 
+						location = /40x.html { 
+				}
+
+				error_page 500 502 503 504 /50x.html; 
+						location = /50x.html { 
+				}
+
+				location /k8s-book { ## 新增加gitbook访问路径 
+				alias /app/k8s-gitbook/_book; # 这个路径是关键，就是GitBook⼯程下build出来的_book⽬录，需要运⾏gitbook build命令⾃动⽣成 
+				index index.html index.htm; 
+				autoindex on; 
+--------------------
+</code></pre>
+<h5 id="平滑重启">平滑重启</h5>
+<pre><code>$ nginx -s reload
+</code></pre>
+<h5 id="访问验证">访问验证</h5>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接: </strong>
+      <a href="https://iman.github.io/post/hero/" title="" target="_blank" rel="external">https://iman.github.io/post/hero/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/xiaoheiAh" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://iman.github.io/avatar.png" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/xiaoheiAh" target="_blank"><span class="text-dark">少年王寒</span><small class="ml-1x">学生</small></a></h3>
+        <div>我的善良是，毫不斟酌地让对方看到我的全貌~</div>
+      </div>
+    </figure>
+  </div>
+</div>
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="next">
+                <a href="https://iman.github.io/post/any/"
+                    title="测试文章01"><span>上一篇&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="http://i5os.cn" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://iman.github.io/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2009  -
+    2020
+    <div class="publishby">
+        Theme by <a href="https://github.com/xiaoheiAh" target="_blank"> xiaoheiAh </a>base on<a href="https://github.com/xiaoheiAh/hugo-theme-pure" target="_blank"> pure</a>.
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://iman.github.io/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js"></script>
+<script src="https://iman.github.io/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(未命名)',
+            },
+            ROOT_URL: 'https:\/\/iman.github.io\/',
+            CONTENT_URL: 'https:\/\/iman.github.io\/\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://iman.github.io/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+  </body>
+</html>

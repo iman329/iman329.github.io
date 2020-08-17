@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 桃李华林 | 王寒的私语</title>
+    <link>https://iman.github.io/post/</link>
+    <description>Recent content in Posts on 桃李华林 | 王寒的私语</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 04 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://iman.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>测试文章03</title>
+      <link>https://iman.github.io/post/history/</link>
+      <pubDate>Tue, 04 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://iman.github.io/post/history/</guid>
+      <description>使⽤Hugo+Gitbook+Nginx 构建静态博客⽹站 前⾔：之前我⼀直使⽤的是wordpress搭建的博客，由于是在某云搞活动时买的最低配</description>
+    </item>
+    
+    <item>
+      <title>测试文章02</title>
+      <link>https://iman.github.io/post/hello/</link>
+      <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://iman.github.io/post/hello/</guid>
+      <description>这是第一节 第一节第一段 对的，我正是如此思考的。 但是呢，我还不能做决定。 也许你说得对。 第一节第二段 可以试试 好！ 开始！ 嗯嗯。 这是第二节 第二节第一</description>
+    </item>
+    
+    <item>
+      <title>测试文章01</title>
+      <link>https://iman.github.io/post/any/</link>
+      <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://iman.github.io/post/any/</guid>
+      <description>这是第一节 第一节第一段 对的，我正是如此思考的。 但是呢，我还不能做决定。 也许你说得对。 第一节第二段 可以试试 好！ 开始！ 嗯嗯。 这是第二节 第二节第一</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://iman.github.io/post/hero/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://iman.github.io/post/hero/</guid>
+      <description>使⽤Hugo+Gitbook+Nginx 构建静态博客⽹站 前⾔：之前我⼀直使⽤的是wordpress搭建的博客，由于是在某云搞活动时买的最低配</description>
+    </item>
+    
+  </channel>
+</rss>
